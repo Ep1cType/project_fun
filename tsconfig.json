@@ -16,8 +16,12 @@
     "incremental": true,
     "baseUrl": "./",
     "paths": {
-      "@/components/*": ["components/*"],
-      "@/styles/*": ["styles/*"]
+      "@/styles/*": ["styles/*"],
+      "@/src/app/*": ["src/app/*"],
+      "@/src/entities/*": ["src/entities/*"],
+      "@/src/features/*": ["src/features/*"],
+      "@/src/shared/*": ["src/shared/*"],
+      "@/src/widgets/*": ["src/widgets/*"]
     },
     "types": ["react/next", "react-dom/next"]
   },
