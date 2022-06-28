@@ -1,5 +1,5 @@
 import React, { FC, ReactNode } from 'react';
-import Header from '@/src/app/header';
+import Sidebar from '@/src/app/sidebar';
 
 interface LayoutProps {
   children: ReactNode;
@@ -8,8 +8,12 @@ interface LayoutProps {
 const Layout: FC<LayoutProps> = ({ children }) => {
   return (
     <>
-      <Header />
-      <div>{children}</div>
+      <Sidebar />
+      <div
+        className="relative min-h-screen lg:left-[200px] w-full lg:w-[calc(100%_-_200px)] bg-amber-100"
+      >
+        {children}
+      </div>
     </>
   );
 };

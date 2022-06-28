@@ -1,11 +1,15 @@
 import React, { FC, ReactNode } from 'react';
+import cn from 'classnames';
+
+//styles
+import s from './index.module.css';
 
 type ContainerProps = {
   children: ReactNode;
 };
 
-const Container: FC<ContainerProps> = ({ children }) => {
-  return <div className='container mx-auto px-40'>{children}</div>;
+const ContainerWrapper: FC<ContainerProps> = ({ children }) => {
+  return <div className={cn(s.container)}>{children}</div>;
 };
 
-export default Container;
+export default ContainerWrapper;
